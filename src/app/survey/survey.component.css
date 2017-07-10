@@ -1,0 +1,20 @@
+.Qtext {
+  background-color: palegoldenrod;
+  padding: 0 30px;
+  font-weight: bold;
+}
+.QStat{
+  background-color:paleturquoise;
+  /*padding: 0 10px;*/
+  font-weight: bold;
+}
+.pillar{
+  background-color:palegreen;
+ /* padding: 0 10px;*/
+  font-weight: bold;
+}
+.cluster{
+  background-color:palevioletred;
+ /* padding: 0 10px;*/
+  font-weight: bold;
+}

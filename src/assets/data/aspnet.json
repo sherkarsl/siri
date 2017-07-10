@@ -1,0 +1,417 @@
+{
+    "id": 1,
+    "name": "Smart Industry Readiness Index",
+    "description": "EDB Siri jason file",
+    "questions": [
+        {
+            "id": 1010,
+            "name": "Processes Paradigm",
+            "Driver": "This following section will assess the vertical processes across your organization",
+            "Tagline": "Factory Production",
+            "Des1": "The step of transforming both material and non-material inputs into the output that create utility is known as Production. The transformation includes conversion of raw materials into work in progress and works in progress into finished goods ready for sale. Here, the material input includes raw material, components, partly finished goods, etc. and non-material goods include ideas, information, skill, art, talent, etc.",
+            "Des2": "Vertical integration is defined as the integration of the different IT systems at different hierarchical levels of a production system within a factory (e.g., actuator and sensor, controller, production management, facility management, manufacturing, execution, and corporate planning levels ) into an end-to-end solution. This enables production to be flexible, adaptable, and dynamic through decentralized planning and execution (e.g. customized batch sizes).",
+            "Des3": "Generally the process is separated into hierarchical levels by the so called 'automation pyramid'. Starting from the top:",
+            "Des4": "1)Enterprise level (enterprise resource planning),2) Management level (high level manufacturing execution coordination),3) Supervision level (production site supervisory control)4) Control level (logic control of machinery & components),5) Field level (sensors, actuators, etc.)",
+            "Des5": "Please select the option below that applies the most. The supply chain is mostly…",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Not defined",
+                    "descp":"Most  process steps (e.g. production scheduling, energy consumption and etc.) are not explicitly defined or tracked.(e.g. production is an unpredictable process)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Analog",
+                    "descp": "Most supply chain steps are defined and completed by humans using analog tools.(e.g. an employee calls the logistics department when a shipment is ready for pickup)",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Digital",
+                    "descp": "Most supply chain steps are defined and completed by humans using digital tools.(e.g. planning of component inventories to be ordered from suppliers is done using IT systems)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "Automated",
+                    "descp": "Most supply chain steps are defined, digital and automated requiring no human interaction.(e.g. if inventories of components fall, the IT system automatically informs purchasing that new components need to be ordered)",
+                    "isAnswer": false
+                },
+                 {
+                    "id": 1059,
+                    "questionId": 1010,
+                    "name": "Integrated",
+                    "descp": "Most supply chain steps are defined, digital, automated and integrated with the prior / subsequent  partners/steps.(e.g. the logistics company is notified by an IT system when an order from a customer is ready for shipping pickup",
+                    "isAnswer": false
+                },
+                 {
+                    "id": 1060,
+                    "questionId": 1010,
+                    "name": "Intelligent",
+                    "descp": "Most supply chain steps are defined, digital, automated, integrated and intelligently decide how best to optimize the supply chain.(e.g. big data analytics predict rising customer demand for a given product and the preparation steps to handle this situation are automatically triggered)",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1011,
+            "name": "Processes Paradigm",
+            "Driver": "This following section will assess the vertical processes across your organization",
+            "Tagline": "Factory Production",
+            "Des1": "The step of transforming both material and non-material inputs into the output that create utility is known as Production. The transformation includes conversion of raw materials into work in progress and works in progress into finished goods ready for sale. Here, the material input includes raw material, components, partly finished goods, etc. and non-material goods include ideas, information, skill, art, talent, etc.",
+            "Des2": "Vertical integration is defined as the integration of the different IT systems at different hierarchical levels of a production system within a factory (e.g., actuator and sensor, controller, production management, facility management, manufacturing, execution, and corporate planning levels ) into an end-to-end solution. This enables production to be flexible, adaptable, and dynamic through decentralized planning and execution (e.g. customized batch sizes).",
+            "Des3": "Generally the process is separated into hierarchical levels by the so called 'automation pyramid'. Starting from the top:",
+            "Des4": "1)Enterprise level (enterprise resource planning),2) Management level (high level manufacturing execution coordination),3) Supervision level (production site supervisory control)4) Control level (logic control of machinery & components),5) Field level (sensors, actuators, etc.)",
+            "Des5": "Please select the option below that applies the most. The supply chain is mostly…",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Not defined",
+                    "descp":"Most  process steps (e.g. production scheduling, energy consumption and etc.) are not explicitly defined or tracked.(e.g. production is an unpredictable process)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Analog",
+                    "descp": "Most supply chain steps are defined and completed by humans using analog tools.(e.g. an employee calls the logistics department when a shipment is ready for pickup)",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Digital",
+                    "descp": "Most supply chain steps are defined and completed by humans using digital tools.(e.g. planning of component inventories to be ordered from suppliers is done using IT systems)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "Automated",
+                    "descp": "Most supply chain steps are defined, digital and automated requiring no human interaction.(e.g. if inventories of components fall, the IT system automatically informs purchasing that new components need to be ordered)",
+                    "isAnswer": false
+                },
+                 {
+                    "id": 1059,
+                    "questionId": 1010,
+                    "name": "Integrated",
+                    "descp": "Most supply chain steps are defined, digital, automated and integrated with the prior / subsequent  partners/steps.(e.g. the logistics company is notified by an IT system when an order from a customer is ready for shipping pickup",
+                    "isAnswer": false
+                },
+                 {
+                    "id": 1060,
+                    "questionId": 1010,
+                    "name": "Intelligent",
+                    "descp": "Most supply chain steps are defined, digital, automated, integrated and intelligently decide how best to optimize the supply chain.(e.g. big data analytics predict rising customer demand for a given product and the preparation steps to handle this situation are automatically triggered)",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1012,
+            "name": "What class does the ASP.NET Web Form class inherit from by default?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "System.Web.UI.Page",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "System.Web.UI.Form",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "System.Web.GUI.Page",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "System.Web.Form",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1013,
+            "name": "What does MVC stand for?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Model View Controller",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Maximum Virtual Control",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Microsoft Visual Core",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1014,
+            "name": "Which of the following does NOT require type casting?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Session",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "TempData",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "ViewData",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "ViewBag",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1015,
+            "name": "Which is the correct order of Page life-cycle in asp.net webform?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Init, PreRender, Load",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Load, PreRender, Init",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Init, Load, PreRender",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1016,
+            "name": "Which of these data source controls do not implement caching?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "ObjectDataSource",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "LinqDataSource",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "SqlDataSource",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "XmlDataSource",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1017,
+            "name": "Which tag asp:Label control by default renders to?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "div",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "span",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "body",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "label",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1018,
+            "name": "Which method do you use to explicitly kill a user's session?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "Session.Terminate()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Session.TimeOut()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Session.Abondon()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "Session.Kill()",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1019,
+            "name": "Which of the following object is ideal for keeping data alive for a single request?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 1010,
+                    "name": "HttpContext",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 1010,
+                    "name": "Session",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 1010,
+                    "name": "Cookies",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 1010,
+                    "name": "SqlServer",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+    ]
+}
