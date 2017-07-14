@@ -1,7 +1,20 @@
 <div class="row">
   <div class="col-md-6">
     <h3>Assesment Portal</h3>
-  </div>
+  <!--/div>
+    <div> 
+      <h5>here are results</h5>
+      <ul>
+         <li *ngFor="let item of siriassessment | async">
+         {{item.answered}}
+        </li>
+      </ul> 
+    </div>-->
+    <!--div>
+    <button class="btn btn-default" (click)="onAssess()">Show Assesment</button>
+    </div>-->
+
+
   <div class="col-md-6 text-sm-right">
     Select Assesment:
     <select [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
@@ -16,12 +29,14 @@
   <div *ngIf="mode=='quiz' && quiz">
     <div *ngFor="let question of filteredQuestions;">
       <div class="badge badge-info">Question {{pager.index + 1}} of {{pager.count}}.</div>
-      <div class ="cluster">
-        {{pager.index + 1}}  {{ question.name}}
+      <div class ="cluster"><h6>
+        {{pager.index + 1}}  {{ question.name}}</h6>
       </div>
       <div class ="pillar">
-        <div>{{ question.Driver}}</div>
-        <div>{{ question.Tagline}}</div>
+        <div><h6>{{ question.Driver}}</h6></div>
+        </div>
+        <div class ="pillartag">
+        <div><h5>{{ question.Tagline}}</h5></div>
       </div>
       <div class="Qtext">
         <div><h5>{{ question.Des1}}</h5></div>
@@ -37,7 +52,7 @@
           <div class="option">
             <label class="" [attr.for]="option.id">
                 <input id="{{option.id}}" type="checkbox" [(ngModel)]="option.selected" (change)="onSelect(question, option);" />
-                {{option.name}}<div>{{option.descp}}</div>
+                {{option.name}}<div><h6>{{option.descp}}</h6></div>
             </label>
           </div>
         </div>
@@ -77,28 +92,41 @@
     <h4 class="alert alert-info text-sm-center">You may close this window now.</h4>                              
   </div>
   <div *ngIf="mode=='Assess'">
-    
-    <div> 
-      <h5>here are results</h5>
-      <ul>
-         <li *ngFor="let item of siriassessment | async">
-           {{ item.questionId }}  {{item.answered}}   
-        </li>
-      </ul> 
-      <table style="width:100%">
-        <tr>
-          <th>Operation</th>
-          <th>supply chain</th>
-          <th>Productlifecycle</th>
-        </tr>
-         <tr>
-           <td>Eve</td>
-           <td>Jackson</td>
-           <td>94</td>
-         </tr>
-      </table>
- 
+    <h5>here are results</h5>
+  <div>
+  <table border="1" style="width:100%">
+  <tr>
+    <th>Operation</th>
+    <th>Supply Chain</th> 
+    <th>Prodct life cycle</th>
+    <th>Automation</th>
+    <th>Connectivity</th>
+    <th>Intelligence</th>
+    <th>Talent Readiness</th>
+    <th>Structure and Management</th>
+  </tr>
+  <tr>
+    <td maxlength="4">{{assessmentscore[0]}}</td>
+    <td maxlength="4">{{assessmentscore[1]}}</td>
+    <td maxlength="4">{{assessmentscore[2]}}</td>
+    <td maxlength="4">{{assessmentscore[3]}}</td>
+    <td maxlength="4">{{assessmentscore[4]}}</td>
+    <td maxlength="4">{{assessmentscore[5]}}</td>
+    <td maxlength="4">{{assessmentscore[6]}}</td>
+    <td maxlength="4">{{assessmentscore[7]}}</td>
+  </tr>
+  <tr>
+    </table>
     </div>
+      <div class="chart">
+  <canvas baseChart
+          [datasets]="radarChartData"
+          [labels]="radarChartLabels"
+          [chartType]="radarChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+</div>
+  
 </div>
   <hr />
   <div *ngIf="mode!='result'">

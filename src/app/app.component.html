@@ -9,10 +9,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['']">Home</a></li>
-                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['Survey']">Survey</a></li>
-                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['dashboard']" *ngIf="(isLoggedIn|async)">Dashboard</a></li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['Survey']"*ngIf="(isLoggedIn|async)">Survey</a></li>
+                <!--li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['dashboard']" *ngIf="(isLoggedIn|async)">Dashboard</a></li>
                 <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a
-                        [routerLink]="['all-in-one']" *ngIf="!(isLoggedIn|async)">All In One</a></li>
+                        [routerLink]="['all-in-one']" *ngIf="!(isLoggedIn|async)">All In One</a></li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li *ngIf="(isLoggedIn|async)" class="navbar-text">{{(currentUser()|async).email}}</li>

@@ -5,6 +5,8 @@ import { Option, Question, Quiz, QuizConfig } from '../models/index';
 import { AngularFireModule } from 'angularfire2';
 import {AngularFireDatabase, FirebaseListObservable,FirebaseObjectObservable} from 'angularfire2/database';
 import { Subject } from 'rxjs/Subject';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+import 'chart.js/src/chart.js'
 
 
 @Component({
@@ -25,7 +27,10 @@ export class SurveyComponent implements OnInit {
   qestionidSubject: Subject<any>;
   db: AngularFireDatabase;
   ansdb: any[];
-  
+  answers = [];
+  radarChartData:any = [];
+  radarChartType:string = 'radar';
+  radarChartLabels:string[] = ['Operation', 'Supply Chain', 'Product lifecycle', 'Automation', 'Connectivity', 'Intelligence','Talent Readiness','Structure and Management'];
   config: QuizConfig = {
     'allowBack': true,
     'allowReview': true,
@@ -40,7 +45,7 @@ export class SurveyComponent implements OnInit {
     'showPager': true,
     'theme': 'none'
   };
-
+  assessmentscore=[];
   pager = {
     index: 0,
     size: 1,
@@ -57,6 +62,8 @@ export class SurveyComponent implements OnInit {
       }
     } */
     );
+    
+    
    }
 
 
@@ -113,20 +120,53 @@ export class SurveyComponent implements OnInit {
   };
 
   onSubmit(question: Question) {             
-      let answers = [];     
+            
          
    // const flist = db.list('/flist');
    // this.seloptfire= question.options.find(x=>x.selected) ;
-   // this.quiz.questions.forEach(x => answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered':(x.options.find(x=>x.selected === true)).id }));
+    this.quiz.questions.forEach(x => this.answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered':(x.options.find(x=>x.selected === true)).id }));
     this.quiz.questions.forEach(x => this.siriassessment.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered':(x.options.find(x=>x.selected === true)).id }));
     
-   
+   console.log(this.answers[2].answered);
     // Post your data to the server here. answers contains the questionId and the users' answer.
    //console.log(answers);
   // console.log(this.ansdb); 
-                        
-    console.log(this.quiz.questions);
+  //operation
+    this.assessmentscore.push(this.answers[0].answered);
+     //supply chanin
+    this.assessmentscore.push(this.answers[1].answered);
+     //Product life
+    this.assessmentscore.push(this.answers[2].answered);
+      //automation
+    this.assessmentscore.push((this.answers[3].answered +this.answers[4].answered +this.answers[5].answered)/3);
+    //connectivity
+    this.assessmentscore.push((this.answers[6].answered +this.answers[7].answered +this.answers[8].answered)/3);
+    //intelligence
+    this.assessmentscore.push((this.answers[9].answered +this.answers[10].answered +this.answers[11].answered)/3 );
+    //Talent
+    this.assessmentscore.push((this.answers[12].answered +this.answers[13].answered) /2 );
+    //Structure org
+    this.assessmentscore.push((this.answers[14].answered +this.answers[15].answered) /2 );
+    console.log(this.assessmentscore);               
+    //console.log(this.quiz.questions);
+    this.radarChartData.push({'data': this.assessmentscore,label: 'Assessment Score'});
+    console.log(this.assessmentscore);
+    console.log(this.radarChartData);
     this.mode = 'result';
-  }
-
+  };
+    // events
+  public chartClicked(e:any):void {
+    console.log(e);
+  };
+ 
+  public chartHovered(e:any):void {
+    console.log(e);
+  };
+  onAssess(){
+    //this.radarChartData.push({'data': this.assessmentscore,label: 'Series A'});
+    //console.log(this.assessmentscore);
+    //console.log(this.radarChartData);
+  //this.assessmentscore.operation = this.answers[2].answered; 
+  //console.log(this.answers[0].answered);
+}
 }

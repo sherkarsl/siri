@@ -1,60 +1,60 @@
 {
     "id": 1,
     "name": "Smart Industry Readiness Index",
-    "description": "EDB Siri jason file",
+    "description": "EDB Siri json file",
     "questions": [
         {
-            "id": 1010,
-            "name": "Processes Paradigm",
-            "Driver": "This following section will assess the vertical processes across your organization",
-            "Tagline": "Factory Production",
-            "Des1": "The step of transforming both material and non-material inputs into the output that create utility is known as Production. The transformation includes conversion of raw materials into work in progress and works in progress into finished goods ready for sale. Here, the material input includes raw material, components, partly finished goods, etc. and non-material goods include ideas, information, skill, art, talent, etc.",
-            "Des2": "Vertical integration is defined as the integration of the different IT systems at different hierarchical levels of a production system within a factory (e.g., actuator and sensor, controller, production management, facility management, manufacturing, execution, and corporate planning levels ) into an end-to-end solution. This enables production to be flexible, adaptable, and dynamic through decentralized planning and execution (e.g. customized batch sizes).",
-            "Des3": "Generally the process is separated into hierarchical levels by the so called 'automation pyramid'. Starting from the top:",
-            "Des4": "1)Enterprise level (enterprise resource planning),2) Management level (high level manufacturing execution coordination),3) Supervision level (production site supervisory control)4) Control level (logic control of machinery & components),5) Field level (sensors, actuators, etc.)",
-            "Des5": "Please select the option below that applies the most. The supply chain is mostly…",
+            "id": 1,
+            "name": "Process is repeatable, standardized rules executed by humans supported by technology to perform value adding tasks.",
+            "Driver": "Operations is area of management concerned with planning and executing of processes that deal with the production of goods and services",
+            "Tagline": "Operations-Vertical Integration",
+            "Des1": "Vertical integration is defined as the integration of the different OT & IT systems at different hierarchical levels of a production system within a factory (e.g., actuator and sensor, controller, production management, facility management, manufacturing, execution, and corporate planning levels ) into an end-to-end network.",
+            "Des2": "Industry 4.0 optimizes factory operations to be flexible, adaptable, and dynamic through decentralized planning and execution (e.g. customized batch sizes). End-to-end system visibility will be possible with the seamless transfer and exchange of data between enterprise systems and operations (shopfloor & facility) systems.",
+            "Des3": "",
+            "Des4": "",
+            "Des5": "",
             "questionTypeId": 1,
             "options": [
                 {
-                    "id": 1055,
-                    "questionId": 1010,
+                    "id": 1,
+                    "questionId": 1,
                     "name": "Not defined",
-                    "descp":"Most  process steps (e.g. production scheduling, energy consumption and etc.) are not explicitly defined or tracked.(e.g. production is an unpredictable process)",
+                    "descp":"The process steps (e.g. production scheduling, energy consumption etc.) are not explicitly defined or tracked. (e.g. production is an unpredictable process)",
                     "isAnswer": false
                 },
                 {
-                    "id": 1056,
-                    "questionId": 1010,
+                    "id": 2,
+                    "questionId": 1,
                     "name": "Analog",
-                    "descp": "Most supply chain steps are defined and completed by humans using analog tools.(e.g. an employee calls the logistics department when a shipment is ready for pickup)",
+                    "descp": "The process steps are defined and completed by humans using analog tools. (e.g. production count tracked on paper ledger)",
                     "isAnswer": true
                 },
                 {
-                    "id": 1057,
-                    "questionId": 1010,
+                    "id": 3,
+                    "questionId": 1,
                     "name": "Digital",
-                    "descp": "Most supply chain steps are defined and completed by humans using digital tools.(e.g. planning of component inventories to be ordered from suppliers is done using IT systems)",
+                    "descp": "The process steps are defined and completed by humans using digital tools. (e.g. using ERP, MES, SCADA software)",
                     "isAnswer": false
                 },
                 {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "Automated",
-                    "descp": "Most supply chain steps are defined, digital and automated requiring no human interaction.(e.g. if inventories of components fall, the IT system automatically informs purchasing that new components need to be ordered)",
+                    "id": 4,
+                    "questionId": 1,
+                    "name": "Automated or Integrated",
+                    "descp": "The process steps are defined, digital and automated or integrated requiring n human interaction. (e.g. a verified incoming order is automatically scheduled for production)",
                     "isAnswer": false
                 },
                  {
-                    "id": 1059,
-                    "questionId": 1010,
-                    "name": "Integrated",
-                    "descp": "Most supply chain steps are defined, digital, automated and integrated with the prior / subsequent  partners/steps.(e.g. the logistics company is notified by an IT system when an order from a customer is ready for shipping pickup",
+                    "id": 5,
+                    "questionId": 1,
+                    "name": "Integrated and Automated",
+                    "descp": "The process steps are defined, digital, automated and securely integrated with the prior / subsequent steps across all automation pyramid levels. (e.g. common interfaces & standardized protocols enable interoperability across the hierarchy level with dataflow among processes)",
                     "isAnswer": false
                 },
                  {
-                    "id": 1060,
-                    "questionId": 1010,
+                    "id": 6,
+                    "questionId": 1,
                     "name": "Intelligent",
-                    "descp": "Most supply chain steps are defined, digital, automated, integrated and intelligently decide how best to optimize the supply chain.(e.g. big data analytics predict rising customer demand for a given product and the preparation steps to handle this situation are automatically triggered)",
+                    "descp": "The process steps are defined, digital, automated, securely integrated and intelligently decide how to best optimize the production performance. Furthermore, resources such as energy and material will be used more efficiently, which enables extremely flexible, easily adaptable production processes. (e.g. predictive maintenance schedules system maintenance pre-emptively before a critical failure)",
                     "isAnswer": false
                 }
             ],
@@ -65,57 +65,57 @@
             }
         },
         {
-            "id": 1011,
-            "name": "Processes Paradigm",
-            "Driver": "This following section will assess the vertical processes across your organization",
-            "Tagline": "Factory Production",
-            "Des1": "The step of transforming both material and non-material inputs into the output that create utility is known as Production. The transformation includes conversion of raw materials into work in progress and works in progress into finished goods ready for sale. Here, the material input includes raw material, components, partly finished goods, etc. and non-material goods include ideas, information, skill, art, talent, etc.",
-            "Des2": "Vertical integration is defined as the integration of the different IT systems at different hierarchical levels of a production system within a factory (e.g., actuator and sensor, controller, production management, facility management, manufacturing, execution, and corporate planning levels ) into an end-to-end solution. This enables production to be flexible, adaptable, and dynamic through decentralized planning and execution (e.g. customized batch sizes).",
-            "Des3": "Generally the process is separated into hierarchical levels by the so called 'automation pyramid'. Starting from the top:",
-            "Des4": "1)Enterprise level (enterprise resource planning),2) Management level (high level manufacturing execution coordination),3) Supervision level (production site supervisory control)4) Control level (logic control of machinery & components),5) Field level (sensors, actuators, etc.)",
-            "Des5": "Please select the option below that applies the most. The supply chain is mostly…",
+            "id": 2,
+			"name": "Process is repeatable, standardized rules executed by humans supported by technology to perform value adding tasks.",
+            "Driver": "Supply chain describes area of management concerned with the flow of goods and services from the point of origin to the point of consumption",
+            "Tagline": "Supply Chain-Horizontal Integration",
+            "Des1": "Horizontal integration is defined as the integration of various systems for the support and/or execution of the different value processes (e.g. manufacturing, logistics, marketing, engineering, services etc.) both within and beyond company limits into an end-to-end network.",
+            "Des2": "Industry 4.0 optimize the flow of material and information along the value chain including customer integration. End-to-end system visibility will be possible with the seamless transfer and exchange of data between enterprise systems and operations (shopfloor & facility) systems.",
+            "Des3": "",
+            "Des4": " ",
+            "Des5": "",
             "questionTypeId": 1,
             "options": [
                 {
-                    "id": 1055,
-                    "questionId": 1010,
+                    "id": 1,
+                    "questionId": 2,
                     "name": "Not defined",
-                    "descp":"Most  process steps (e.g. production scheduling, energy consumption and etc.) are not explicitly defined or tracked.(e.g. production is an unpredictable process)",
+                    "descp":"The supply chain steps (e.g. component ordering from suppliers) are not explicitly defined. (e.g. the supply chain is an unpredictable process)",
                     "isAnswer": false
                 },
                 {
-                    "id": 1056,
-                    "questionId": 1010,
+                    "id": 2,
+                    "questionId": 2,
                     "name": "Analog",
-                    "descp": "Most supply chain steps are defined and completed by humans using analog tools.(e.g. an employee calls the logistics department when a shipment is ready for pickup)",
+                    "descp": "The supply chain steps are defined and completed by humans using analog tools. (e.g. an employee calls the logistics department when a shipment is ready for pickup)",
                     "isAnswer": true
                 },
                 {
-                    "id": 1057,
-                    "questionId": 1010,
+                    "id": 3,
+                    "questionId": 2,
                     "name": "Digital",
-                    "descp": "Most supply chain steps are defined and completed by humans using digital tools.(e.g. planning of component inventories to be ordered from suppliers is done using IT systems)",
+                    "descp": "The supply chain steps are defined and completed by humans using digital tools. (e.g. planning of component inventories to be ordered from suppliers is done using IT systems)",
                     "isAnswer": false
                 },
                 {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "Automated",
-                    "descp": "Most supply chain steps are defined, digital and automated requiring no human interaction.(e.g. if inventories of components fall, the IT system automatically informs purchasing that new components need to be ordered)",
+                    "id": 4,
+                    "questionId": 2,
+                    "name": "Automated or Integrated",
+                    "descp": "The supply chain steps are defined, digital and automated or integrated requiring minimum human interaction (e.g. if inventories of components fall, the IT system automatically informs purchasing that new components need to be ordered)",
                     "isAnswer": false
                 },
                  {
-                    "id": 1059,
-                    "questionId": 1010,
-                    "name": "Integrated",
-                    "descp": "Most supply chain steps are defined, digital, automated and integrated with the prior / subsequent  partners/steps.(e.g. the logistics company is notified by an IT system when an order from a customer is ready for shipping pickup",
+                    "id": 5,
+                    "questionId": 2,
+                    "name": "Integrated and Automated",
+                    "descp": "The supply chain steps are defined, digital, automated and securely integrated with the prior / subsequent partners/steps. (e.g. the logistics company is notified by an IT system when an order from a customer is ready for shipping pickup) ",
                     "isAnswer": false
                 },
                  {
-                    "id": 1060,
-                    "questionId": 1010,
+                    "id": 6,
+                    "questionId": 2,
                     "name": "Intelligent",
-                    "descp": "Most supply chain steps are defined, digital, automated, integrated and intelligently decide how best to optimize the supply chain.(e.g. big data analytics predict rising customer demand for a given product and the preparation steps to handle this situation are automatically triggered)",
+                    "descp": "The supply chain steps are defined, digital, automated, securely integrated and intelligently decide how best to optimize the supply chain. (e.g. big data analytics predict rising customer demand for a given product and the preparation steps to handle this situation are automatically triggered)",
                     "isAnswer": false
                 }
             ],
@@ -126,32 +126,57 @@
             }
         },
         {
-            "id": 1012,
-            "name": "What class does the ASP.NET Web Form class inherit from by default?",
+            "id": 3,
+			"name": "Process is repeatable, standardized rules executed by humans supported by technology to perform value adding tasks.",
+            "Driver": "Product lifecycle is area of managing the entire lifecycle of a product from inception, through engineering design and manufacture, to the service and disposal. ",
+            "Tagline": "Product Lifecycle",
+            "Des1": "The life cycle of a product is defined as its development as well as engineering of the corresponding production system, the manufacturing of the product by the production system, the use of the manufactured product by the user, and the product's recycling and/or dismantling.",
+            "Des2": "Industry 4.0 aims to create digital representations of the product and production (also called 'digital twin'). ",
+            "Des3": "The digital representations are created, refined and enriched throughout all stages of the engineering process. For example, the 'Production Planning' creates the digital twin of the production, the 'Production Engineering' refines it and the 'Production Execution' enriches it with real-time operational data. ",
+            "Des4": " ",
+            "Des5": "",
             "questionTypeId": 1,
             "options": [
                 {
-                    "id": 1055,
-                    "questionId": 1010,
-                    "name": "System.Web.UI.Page",
+                    "id": 1,
+                    "questionId": 3,
+                    "name": "Not defined",
+                    "descp": "The engineering process steps (e.g. product design) are not explicitly defined as an official process. (i.e. engineering is an unpredictable process) ",					
                     "isAnswer": true
                 },
                 {
-                    "id": 1057,
-                    "questionId": 1010,
-                    "name": "System.Web.UI.Form",
+                    "id": 2,
+                    "questionId": 3,
+                    "name": "Analog",
+                    "descp": "The engineering process steps are defined and completed by humans using analog tools. (e.g. product designs are drawn with pen & paper, basic lean manufacturing principles are applied in designing the production flow) ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1056,
-                    "questionId": 1010,
-                    "name": "System.Web.GUI.Page",
+                    "id": 3,
+                    "questionId": 3,
+                    "name": "Digital",
+                    "descp": "The engineering process steps are defined and completed by humans using digital tools. (e.g. using computer aided design software to create, refine and enrich the digital twin) ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "System.Web.Form",
+                    "id": 4,
+                    "questionId": 3,
+                    "name": "Automated or Integrated",
+                    "descp": "The engineering process steps are defined, digital and automated or integrated requiring minimum human interaction (e.g. digital plant simulations automatically evaluate & optimize production designs for performance) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 3,
+                    "name": "Integrated and Automated",
+                    "descp": "The engineering process steps are defined, digital, automated, & securely integrated with the prior / subsequent steps. (e.g. relevant digital data from the product design stage is passed, with little delay & loss, digitally to the production planning stage ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 3,
+                    "name": "Intelligent",
+                    "descp": "The engineering process steps are defined, digital, automated, securely integrated and intelligently decide how best to optimize each stage. (e.g. big data analytics identify product features relevant for customers purchasing choices and optimize the engineering process) ",					
                     "isAnswer": false
                 }
             ],
@@ -162,32 +187,118 @@
             }
         },
         {
-            "id": 1013,
-            "name": "What does MVC stand for?",
+            "id": 4,
+            "name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Automation is the application of technology to monitor, control and execute the production and delivery of product and services.",
+            "Tagline": "Automation",
+            "Des1": "Shop Floor Automation in the context of Industry 4.0 aims to drive the following:",
+            "Des2": "1. Full automation for repetitive tasks",
+            "Des3": "2. Flexible changeover for production (reconfigurable)",
+            "Des4": "3. Human collaboration and optimize task allocation (TA) between humans and automation for complex tasks",
+            "Des5": "",
             "questionTypeId": 1,
             "options": [
                 {
-                    "id": 1055,
-                    "questionId": 1010,
-                    "name": "Model View Controller",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1057,
-                    "questionId": 1010,
-                    "name": "Maximum Virtual Control",
+                    "id":1 ,
+                    "questionId": 4,
+                    "name": "None",
+                    "descp": "The shop floor processes are not automated. (i.e. all shop floor processes are executed by humans) ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1056,
-                    "questionId": 1010,
-                    "name": "Microsoft Visual Core",
+                    "id": 2,
+                    "questionId": 4,
+                    "name": "Basic",
+                    "descp": "The shop floor processes are automated with significant human operator’s inputs. (i.e. sensors, actuators, RFID, barcode, displays etc. are used) ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "None of the above",
+                    "id": 3,
+                    "questionId": 4,
+                    "name": "Advanced",
+                    "descp": "The shop floor processes are automated with minimum human operator’s inputs (i.e. sensor, actuators, RFID, barcode, displays and displays are governed by standalone controllers)  ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 4,
+                    "name": "Full",
+                    "descp": "The shop floor processes are automated with no human interventions. (i.e. automated cells work) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 4,
+                    "name": "Flexible",
+                    "descp": "The shop floor processes are automated and are implemented using configurable plug and play automation components enabling quick changeovers.(e.g. automation components can be recombined for a given production tasks quickly and easily) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 4,
+                    "name": "Converged",
+                    "descp": "The shop floor processes are automated and data processing for changing environment conditions in real-time state. Shop floor level automation is converged with enterprise level and facility level into best of collaborative automation systems. ",					
+                    "isAnswer": false
+                }
+			],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 5,
+			"name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Automation is the application of technology to monitor, control and execute the production and delivery of product and services.",
+            "Tagline": "Enterprise Automation",
+            "Des1": "The automation of enterprise level is enabled by automated processing of the value creation processes through enterprise systems with nearly zero downtime.",
+            "Des2": "These processes should be performed more efficiently, real time and adaptable. People are relieved of non-creative tasks, increase in productivity, and resource efficiency.",
+            "Des3": " ",
+            "Des4": " ",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+				{
+                    "id":1 ,
+                    "questionId": 5,
+                    "name": "None",
+                    "descp": "The enterprise processes are not automated. (i.e. all enterprise processes are executed by humans) ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 5,
+                    "name": "Basic",
+                    "descp": "The enterprise processes are automated with significant human operator’s inputs. (e.g. using manufacturing execution system software to automatically retrieve production KPIs) ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 5,
+                    "name": "Advanced",
+                    "descp": "The enterprise processes are automated with minimum human operators’ inputs. (e.g. ERP, CRM, QMS, MES etc. talk through adapters and human operators validate inputs are correct) ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 5,
+                    "name": "Full",
+                    "descp": "The enterprise processes are automated with no human interventions (e.g. manufacturing execution and enterprise resource planning are fully automated) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 5,
+                    "name": "Flexible",
+                    "descp": "The enterprise processes are automated and data processing for changing environment conditions in real-time state. ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 6,
+                    "name": "Converged",
+                    "descp": "The enterprise processes are automated and data processing for changing environment conditions in real-time state. Enterprise level automation is converged with shop floor level and facility level into best of collaborative automation systems. ",					
                     "isAnswer": false
                 }
             ],
@@ -198,68 +309,57 @@
             }
         },
         {
-            "id": 1014,
-            "name": "Which of the following does NOT require type casting?",
+            "id": 6,
+			"name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Connectivity is the state of interconnection and interoperability of platforms, systems and applications in a secure environment to enable seamless data exchange. ",
+            "Tagline": "Facility Automation",
+            "Des1": "Automation in a facility enables the efficient utilization of resources (machines, energy, etc.) in production where the systems autonomously exchange information, trigger actions and control each other independently  ",
+            "Des2": "This is achieved via automated assessment of a machine or condition of a system based on defined parameters such as temperature or condition.  ",
+            "Des3": " ",
+            "Des4": " ",
+            "Des5": "",
             "questionTypeId": 1,
             "options": [
-                {
-                    "id": 1055,
-                    "questionId": 1010,
-                    "name": "Session",
+				{
+                    "id":1 ,
+                    "questionId": 6,
+                    "name": "None",
+                    "descp": "The facility processes are not automated. (i.e. all facility processes are executed by humans) ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1057,
-                    "questionId": 1010,
-                    "name": "TempData",
+                    "id": 2,
+                    "questionId": 6,
+                    "name": "Basic",
+                    "descp": "The facility processes are automated with significant human operator’s inputs. (e.g. environmental sensors such as humidity, temperature and meters for consumed utilities such as water, air, gas, electricity is installed & managed by humans) ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1056,
-                    "questionId": 1010,
-                    "name": "ViewData",
+                    "id": 3,
+                    "questionId": 6,
+                    "name": "Advanced",
+                    "descp": "The facility processes are automated with minimum human operator’s inputs. (e.g. utilities meters and sensor data can be captured by controllers and BMS systems) ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "ViewBag",
-                    "isAnswer": true
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1015,
-            "name": "Which is the correct order of Page life-cycle in asp.net webform?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 1055,
-                    "questionId": 1010,
-                    "name": "Init, PreRender, Load",
+                    "id": 4,
+                    "questionId": 6,
+                    "name": "Full",
+                    "descp": "The facility processes are automated with no human intervention. (e.g. all utilities meters and sensor data can be captured by controllers and BMS systems) ",					
                     "isAnswer": false
                 },
-                {
-                    "id": 1057,
-                    "questionId": 1010,
-                    "name": "Load, PreRender, Init",
+				{
+                    "id": 5,
+                    "questionId": 6,
+                    "name": "Flexible",
+                    "descp": "The facility processes are automated and data processing for changing environment conditions in real-time state. ",					
                     "isAnswer": false
                 },
-                {
-                    "id": 1056,
-                    "questionId": 1010,
-                    "name": "Init, Load, PreRender",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "None of the above",
+				{
+                    "id": 6,
+                    "questionId": 6,
+                    "name": "Converged",
+                    "descp": "The facility processes are automated and data processing for changing environment conditions in real-time state. Facility level automation is converged with shop floor level and enterprise level into best of collaborative automation systems. ",					
                     "isAnswer": false
                 }
             ],
@@ -269,33 +369,546 @@
                 "isActive": true
             }
         },
+		{
+            "id": 7,
+			"name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Connectivity is the state of interconnection and interoperability of platforms, systems and applications in a secure environment to enable seamless data exchange. ",
+            "Tagline": "Shopfloor Connectivity",
+            "Des1": "Shop floor connectivity enables seamless secure data sharing and interoperability between machines and across shop floor ",
+            "Des2": "",
+            "Des3": " ",
+            "Des4": " ",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+				{
+                    "id":1 ,
+                    "questionId": 7,
+                    "name": "None",
+                    "descp": "There is no connectivity between shop floor automation systems. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 7,
+                    "name": "Connected",
+                    "descp": "The shop floor automation systems are connected. There are numerous communication technologies & protocols in use creating a more heterogeneous and but without interoperable landscape. (e.g. PROFINET, PROFIBUS, EtherCAT, OPC UA) ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 7,
+                    "name": "Connected & Interoperable",
+                    "descp": "The shop floor automation systems are connected and interoperable. There are few communication technologies & protocols in use creating a more homogeneous & interoperable landscape. (e.g. mostly only PROFINET)",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 7,
+                    "name": "Secure",
+                    "descp": "The shop floor automation systems are connected, interoperable and exhibit high security capabilities with high resilience to threats. (e.g. authentication, encryption) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 7,
+                    "name": "Real Time or Scalable",
+                    "descp": "The shopfloor automation systems are connected, interoperable, secure and are capable of real-time communication or scalable for integrated networking. (e.g. PLC unit on real-time “Time Sensitive Network” on Ethernet) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 7,
+                    "name": "Real-Time and Scalable",
+                    "descp": "The facility processes are automated and data processing for changing environment conditions in real-time state. Facility level automation is converged with shop floor level and enterprise level into best of collaborative automation systems. ",					
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },		
         {
-            "id": 1016,
-            "name": "Which of these data source controls do not implement caching?",
+            "id": 8 ,
+			"name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Connectivity is the state of interconnection and interoperability of platforms, systems and applications in a secure environment to enable seamless data exchange. ",
+            "Tagline": "Enterprise Connectivity",
+            "Des1": "Enterprise application and network connectivity enables seamless secure data sharing and interoperability between enterprise, facility infrastructure and across shop floor.",
+            "Des2": "  ",
+            "Des3": " ",
+            "Des4": " ",
+            "Des5": "",
             "questionTypeId": 1,
             "options": [
                 {
-                    "id": 1055,
-                    "questionId": 1010,
-                    "name": "ObjectDataSource",
+                    "id":1 ,
+                    "questionId": 8,
+                    "name": "None",
+                    "descp": "There is no connectivity between enterprise IT systems. ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1056,
-                    "questionId": 1010,
-                    "name": "LinqDataSource",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1057,
-                    "questionId": 1010,
-                    "name": "SqlDataSource",
+                    "id": 2,
+                    "questionId":8 ,
+                    "name": "Connected",
+                    "descp": "The enterprise IT systems are connected. There are numerous communication technologies & protocols in use creating a more heterogeneous but without interoperable landscape. (e.g. Office LAN, PROFINET, OPC UA) ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "XmlDataSource",
+                    "id": 3,
+                    "questionId":8 ,
+                    "name": "Connected & Interoperable",
+                    "descp": "The enterprise IT systems are connected. There are few communication technologies & protocols in use creating a more homogeneous & interoperable landscape. (e.g. mostly only Office LAN, OPC UA) ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId":8 ,
+                    "name": "Secure",
+                    "descp": "The enterprise IT systems are connected, interoperable and exhibit high security capabilities with high resilience to threats. (e.g. authentication, encryption) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId":8 ,
+                    "name": "Real Time or Scalable",
+                    "descp": "The enterprise IT systems are connected, interoperable, secure and are capable of real-time communication or scalable for integrated networking. (e.g. router unit on real-time “Time Sensitive Network” on Ethernet)",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId":8 ,
+                    "name": "Real Time and Scalable",
+                    "descp": "The enterprise IT systems are connected, interoperable, secure and scalable in real-time communication with sematic understanding. (e.g. self initialization and loading of applications in production environment )” on Ethernet) ",					
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+		{
+            "id": 9,
+			"name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Connectivity is the state of interconnection and interoperability of platforms, systems and applications in a secure environment to enable seamless data exchange. ",
+            "Tagline": "Facility Connectivity",
+            "Des1": "Facility sensors and devices connectivity enables seamless secure data sharing and interoperability between facility infrastructure and across shop floor.",
+            "Des2": "An effective, efficient and relevant facility and resource (e.g. energy, water and waste) integration strategy can help in controlling facility/ consumption cost, which are one of the largest expenditures in asset-intensive enterprise.",
+            "Des3": " ",
+            "Des4": " ",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id":1 ,
+                    "questionId": 9,
+                    "name": "None",
+                    "descp": "There is no connectivity between facility automation systems. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 9,
+                    "name": "Connected",
+                    "descp": "The facility systems are connected. There are numerous communication technologies & protocols in use creating a more heterogeneous but without interoperable landscape. (e.g. Modbus, DNP, EtherCAT, OPC UA) ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 9,
+                    "name": "Connected & Interoperable",
+                    "descp": "The facility systems are connected. There are few communication technologies & protocols in use creating a more homogeneous & interoperable landscape. (e.g. mostly only DNP3) ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 9,
+                    "name": "Secure",
+                    "descp": "The facility systems are connected, interoperable and exhibit high security capabilities with high resilience to threats. (e.g. authentication, encryption) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 9,
+                    "name": "Real Time or Scalable",
+                    "descp": " The facility systems are connected, interoperable, secure and are capable of real-time communication or scalable for integrated networking. (e.g. energy meter on real-time “Time Sensitive Network” on Ethernet)",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 9,
+                    "name": "Real Time and Scalable",
+                    "descp": "The facility systems are connected, interoperable, secure scalable in real-time communication with sematic understanding. (e.g. self-identifying energy meter or temperature unit) ",					
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+		{
+            "id": 10,
+			"name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Intelligence is utilization of data through analytics to create new actionable applications and functionalities.",
+            "Tagline": "Shopfloor Intelligence",
+            "Des1": "Intelligence leads to new functionalities in production system with significantly reduced intervention by human.",
+            "Des2": "Intelligent shop floor automation systems are adaptive (they interact with their environment and adapt to it individually), robust (constantly changing environment without any reduction in performance levels) and, forward looking (they anticipate the effects of different factors based on experience-based knowledge).",
+            "Des3": "By applying real- time production process data monitoring, analysis and processing, intelligent automation systems would be informative and able to make real time decision, predict future production (self- learning) trend and reacts autonomously to changes or faults and takes appropriate actions.",
+            "Des4": "",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id":1 ,
+                    "questionId": 10,
+                    "name": "None",
+                    "descp": "No automation & IT systems are in use. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 10,
+                    "name": "Computerized",
+                    "descp": "The automation & IT systems have runtime logic that they simply execute (not more than that). ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 10,
+                    "name": "Visible",
+                    "descp": "The automation & IT systems have runtime logic that can monitor. (e.g. system performance and errors/anomalies and hence are aware of deviations from the defined target state) Operators are notified of errors and failures. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 10,
+                    "name": "Transparent",
+                    "descp": "The automation & IT systems have runtime logic that can monitor and diagnose. (e.g. system performance and errors/anomalies to understand why they occur) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 10,
+                    "name": "Predictive",
+                    "descp": "The automation & IT systems have runtime logic that can monitor, diagnose and predict. (e.g. system performance and errors/anomalies to forecast future states of the system) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 10,
+                    "name": "Adaptive",
+                    "descp": "The automation & IT systems have runtime logic that can monitor, diagnose, predict and adapt itself to optimize. (e.g. system performance and minimize errors/anomalies) ",					
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+		{
+            "id": 11,
+			"name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Intelligence is utilization of data through analytics to create new actionable applications and functionalities.",
+            "Tagline": "Enterprise Intelligence",
+            "Des1": "By applying real- time production process data monitoring, analysis and processing, enterprise would be informative and able to make real time decision, predict future production (self- learning) trend and reacts autonomously to changes or faults and takes appropriate actions. ",
+            "Des2": "",
+            "Des3": "",
+            "Des4": "",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id":1 ,
+                    "questionId": 11,
+                    "name": "None",
+                    "descp": "No automation & IT systems are in use.",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 11,
+                    "name": "Computerized",
+                    "descp": "The automation & IT systems have runtime logic that they simply execute (not more than that). ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 11,
+                    "name": "Visible",
+                    "descp": "The automation & IT systems have runtime logic that can monitor. (e.g. system performance and errors/anomalies and hence are aware of deviations from the defined target state) Operators are notified of errors and failures. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 11,
+                    "name": "Transparent",
+                    "descp": "The automation & IT systems have runtime logic that can monitor and diagnose. (e.g. system performance and errors/anomalies to understand why they occur) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 11,
+                    "name": "Predictive",
+                    "descp": "The automation & IT systems have runtime logic that can monitor, diagnose and predict. (e.g. system performance and errors/anomalies to forecast future states of the system) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 11,
+                    "name": "Adaptive",
+                    "descp": "The automation & IT systems have runtime logic that can monitor, diagnose, predict and adapt itself to optimize. (e.g. system performance and minimize errors/anomalies) ",					
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+		{
+            "id": 12,
+			"name": "Technology are machines, tools and systems (includes both hardware and software) that are deployed for the production of goods and services",
+            "Driver": "Intelligence is utilization of data through analytics to create new actionable applications and functionalities.",
+            "Tagline": "Facility Intelligence",
+            "Des1": "Intelligence leads to new functionalities in production system with significantly reduced intervention by human.",
+            "Des2": "Intelligent facility automation systems are adaptive (they interact with their environment and adapt to it individually), robust (constantly changing environment without any reduction in performance levels) and, forward looking (they anticipate the effects of different factors based on experience-based knowledge).",
+            "Des3": " By applying real- time production process data monitoring, analysis and processing, intelligent automation systems would be informative and able to make real time decision, predict future production (self- learning) trend and reacts autonomously to changes or faults and takes appropriate actions. ",
+            "Des4": " ",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id":1 ,
+                    "questionId": 12,
+                    "name": "None",
+                    "descp": "No automation & IT systems are in use. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 12,
+                    "name": "Computerized",
+                    "descp": "The automation & IT systems have runtime logic that they simply execute (not more than that). ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 12,
+                    "name": "Visible",
+                    "descp": "The automation & IT systems have runtime logic that can monitor. (e.g. system performance and errors/anomalies and hence are aware of deviations from the defined target state) Operators are notified of errors and failures. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 12,
+                    "name": "Transparent",
+                    "descp": "The automation & IT systems have runtime logic that can monitor and diagnose. (e.g. system performance and errors/anomalies to understand why they occur) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 12,
+                    "name": "Predictive",
+                    "descp": "The automation & IT systems have runtime logic that can monitor, diagnose and predict. (e.g. system performance and errors/anomalies to forecast future states of the system) ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 12,
+                    "name": "Adaptive",
+                    "descp": "The automation & IT systems have runtime logic that can monitor, diagnose, predict and adapt itself to optimize. (e.g. system performance and minimize errors/anomalies) ",					
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+		{
+            "id": 13,
+            "name": "The organization governs the long term perspective of the company.",
+            "Driver": "Talent Readiness describes workforce’s ability to run, manage, and continuously enhance a highly digitalized factory/plant",
+            "Tagline": "Talent Readiness-Workforce Training & Development",
+            "Des1": "Clear training and development plan must exist for all employees to promote flexibility and continuous improvement.",
+            "Des2": " In a Cyber Physical World, company can generates enormous amount of data but ultimately it will be dependent on people to process the data and develop appropriate action (e.g. intelligent runtime logic, decision –making and etc.).",
+            "Des3": "Employees across all levels of organization (i.e. shopfloor, facility & enterprise) must be carefully hired, trained and developed in respect to digitalization (e.g. digital technologies such as data analytics).",
+            "Des4": "",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id":1 ,
+                    "questionId": 13,
+                    "name": "No Understanding ",
+                    "descp": "No Clear Training and development plan (e.g. skills matrix for operators, lean manufacturing for engineers etc.) exist in the company. Workforce at all levels of the organization is not aware of Industry 4.0 and no efforts is made to identify & understand key digital capabilities across the organization have been made. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 13,
+                    "name": "Basic Understanding ",
+                    "descp": "Ad-hoc Training and development process exist in the company but not up to date with company transformation strategy. Workforce at all levels of the organization is aware of digital tools and limited efforts are made to identify & understand key digital capabilities by individual teams of the organization. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 13,
+                    "name": "Full Understanding",
+                    "descp": "Clear Training and development plan exist in the company and up to date with the company transformation strategy. Workforce at all levels of the organization has been informed and understood about the company's plan for skills uptake on digital tools and there is an organized effort to identify key digital capabilities in key areas. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 13,
+                    "name": "Planning",
+                    "descp": "Key digital capabilities are identified, and formal training plans are being developed for workforce at all levels of the organization.",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 13,
+                    "name": "Executing",
+                    "descp": "Key digital capabilities are identified, training plans have been developed and at the stage of implementation for workforce at all levels of the organization. ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 13,
+                    "name": "Sustaining",
+                    "descp": "Key digital capabilities are identified, training plans exist and are ongoing for workforce at all levels of the organization. The working environment is monitored for continuous improvement on digital skills uptake. ",					
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+		{
+            "id": 14,
+            "name": "The organization governs the long term perspective of the company.",
+            "Driver": "Talent Readiness describes workforce’s ability to run, manage, and continuously enhance a highly digitalized factory/plant",
+            "Tagline": "Talent Readiness-Leadership Competency",
+            "Des1": "With increasing complexity, hierarchy, structure and subject matter expertise of leaders will become less important. The need for flexibility and speed requires decentral organizational forms and leaders´ capabilities to delegate responsibilities . An Industry 4.0 leadership requires the knowledge of I4.0 concepts and its translation to their enterprise and its resulting requirements to the management teams.",
+            "Des2": "  ",
+            "Des3": " ",
+            "Des4": " ",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id":1 ,
+                    "questionId": 14,
+                    "name": "No Understanding ",
+                    "descp": "Management team is not familiar with Industry 4.0 concepts (e.g. vertical integration, value chain) and acts in formalized structures and processes.  ",						
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 14,
+                    "name": "Limited Understanding ",
+                    "descp": "Management team is familiar with Industry 4.0 concepts but have not rationalized them for their operation. Still acts in formalized structures and processes. ",						
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 14,
+                    "name": "Full Understanding",
+                    "descp": "Management team fully understands Industry 4.0 concepts and is capable to prepare change management plan. Allows input from teams.  ",						
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 14,
+                    "name": "Planning",
+                    "descp": "Management team can show evidence of change management plan. Actively engages teams. ",						
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 14,
+                    "name": "Executing",
+                    "descp": "Management team fosters a business transformation environment and shows clear roadmap for implementation of business transformation. Delegates responsibilities and empowers teams.",						
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 14,
+                    "name": "Sustaining",
+                    "descp": "Management team is agile, responsive, drives transformation process in a sustainable way and is highly connected with enterprise network. Inspires sustainable high-performance teams. ",						
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+		{
+            "id": 15,
+            "name": "The organization governs the long term perspective of the company.",
+            "Driver": "Structure & Management is the framework that guides how teams act/ interact and initiatives are implemented to achieve organizational goals. ",
+            "Tagline": "Structure & Management-Inter-department Collaboration",
+            "Des1": "Employees across all levels of organization must be prepared for a new way of working in the new age of digitalization. Faster and tighter development iterations with quick decision enablement are important.",
+            "Des2": "",
+            "Des3": "",
+            "Des4": "",
+            "Des5": "",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id":1 ,
+                    "questionId": 15,
+                    "name": "Disconnected",
+                    "descp": "Work is in silos, teams are sanctioned and assigned formally by management, interaction and communication are limited & controlled. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 2,
+                    "questionId": 15,
+                    "name": "Connected",
+                    "descp": "Work is primarily in silos, team are sanctioned and assigned formally by management, cross functional interaction, communication is on ad hoc basis.",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 3,
+                    "questionId": 15,
+                    "name": "Functional",
+                    "descp": "Key efforts are delivered via formal cross functional teams, some ad hoc problem solving initiative taken by departments; internal focus. ",					
+                    "isAnswer": false
+                },
+                {
+                    "id": 4,
+                    "questionId": 15,
+                    "name": "Solution-Oriented",
+                    "descp": "Cross functional collaboration & teamwork is realized as part of solutions orientation. ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 5,
+                    "questionId": 15,
+                    "name": "Open",
+                    "descp": "Cross functional collaboration & teamwork is realized as part of solutions orientation; engagement with external partners growing & seen as value-creation. ",					
+                    "isAnswer": false
+                },
+				{
+                    "id": 6,
+                    "questionId": 15,
+                    "name": "Dynamic",
+                    "descp": "Cross-functional collaboration and teamwork is realized as part of solutions orientation; engagement with external supply chain growing seen a value-creation activity, teams are working with an appropriate level of autonomy and various suitable communication paths exist. ",					
                     "isAnswer": false
                 }
             ],
@@ -306,104 +919,57 @@
             }
         },
         {
-            "id": 1017,
-            "name": "Which tag asp:Label control by default renders to?",
+            "id": 16,
+            "name": "The organization governs the long term perspective of the company.",
+            "Driver": "Structure & Management is the framework that guides how teams act/ interact and initiatives are implemented to achieve organizational goals. ",
+            "Tagline": "Strategy, Policy and Governance",
+            "Des1": "Industry 4.0 requires strategy, policy and governance framework to be in place across all levels of organizations (i.e. shopfloor, facility and enterprise) to drive change management in the industry level transformation.",
+            "Des2": "",
+            "Des3": "",
+            "Des4": "",
+            "Des5": "",
             "questionTypeId": 1,
             "options": [
                 {
-                    "id": 1055,
-                    "questionId": 1010,
-                    "name": "div",
+                    "id":1 ,
+                    "questionId": 16,
+                    "name": "Not existence",
+                    "descp": "No strategy, policy and governance for Industry 4.0 initiative exists.",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1056,
-                    "questionId": 1010,
-                    "name": "span",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1057,
-                    "questionId": 1010,
-                    "name": "body",
+                    "id": 2,
+                    "questionId": 16,
+                    "name": "Defined",
+                    "descp": "Strategy and policy framework are defined /documented and governance committee is established.",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "label",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1018,
-            "name": "Which method do you use to explicitly kill a user's session?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 1055,
-                    "questionId": 1010,
-                    "name": "Session.Terminate()",
+                    "id": 3,
+                    "questionId": 16,
+                    "name": "Clarified",
+                    "descp": "Goles and responsibilities for delivering the policy objective are clear and understood by stakeholders, and partners. ",					
                     "isAnswer": false
                 },
                 {
-                    "id": 1057,
-                    "questionId": 1010,
-                    "name": "Session.TimeOut()",
+                    "id": 4,
+                    "questionId": 16,
+                    "name": "Integrated",
+                    "descp": "Policy plan is integrated into departmental planning process and influences overall organizational strategy and direction. ",					
                     "isAnswer": false
                 },
-                {
-                    "id": 1056,
-                    "questionId": 1010,
-                    "name": "Session.Abondon()",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "Session.Kill()",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1019,
-            "name": "Which of the following object is ideal for keeping data alive for a single request?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 1055,
-                    "questionId": 1010,
-                    "name": "HttpContext",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1056,
-                    "questionId": 1010,
-                    "name": "Session",
+				{
+                    "id": 5,
+                    "questionId": 16,
+                    "name": "Implemented",
+                    "descp": "Policy Plan is formally implemented in the company and governed with a standardized approach and framework.  This includes the Industrial Safety and Security principles during the transformation. Management monitor outcomes-focused metrics by which processes, staff, and outcomes are measured to ensure that goals are being met.. ",					
                     "isAnswer": false
                 },
-                {
-                    "id": 1057,
-                    "questionId": 1010,
-                    "name": "Cookies",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 1010,
-                    "name": "SqlServer",
+				{
+                    "id": 6,
+                    "questionId": 16,
+                    "name": "Transformed",
+                    "descp": "Industry 4.0 services/products and channels drive the organizational structure and reporting within a standardized policy and governance. ",					
                     "isAnswer": false
                 }
             ],

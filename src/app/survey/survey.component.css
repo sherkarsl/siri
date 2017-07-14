@@ -1,20 +1,57 @@
 .Qtext {
-  background-color: palegoldenrod;
-  padding: 0 30px;
-  font-weight: bold;
+    background-color: palegoldenrod;
+   
+    /*padding: 0 30px;*/
+    font-weight: bold;
+    border-radius: 25px;
+    
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px; 
+    /*width: 200px;*/
+    /*height: 150px; */
 }
 .QStat{
   background-color:paleturquoise;
   /*padding: 0 10px;*/
   font-weight: bold;
+  border-radius: 25px;
+    
+  background-position: left top;
+  background-repeat: repeat;
 }
 .pillar{
   background-color:palegreen;
- /* padding: 0 10px;*/
+  padding: 1px 20px;
   font-weight: bold;
+  border-radius: 25px;  
+  background-position: left top;
+  background-repeat: repeat;
 }
 .cluster{
-  background-color:palevioletred;
- /* padding: 0 10px;*/
+  background-color:#c1def2;
+  padding: 1px 20px;
   font-weight: bold;
+  border-radius: 25px;  
+  background-position: left top;
+  background-repeat: repeat;
 }
+.pillartag{
+  background-color:paleturquoise;
+  padding: 1px 300px;
+  font-weight: bold;
+  border-radius: 25px;
+    
+  background-position: left top;
+  background-repeat: repeat;
+}
+.chart {display: block; width: 60%;}
+.option{
+  background-color: #edf0f2;
+  padding: 0 20px;
+  font-weight: bold;
+  border-radius: 25px;  
+  background-position: left top;
+  background-repeat: repeat;
+}
+

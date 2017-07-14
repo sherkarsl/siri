@@ -21,15 +21,18 @@ import {LoginPageComponent} from "./pages/login-page.component";
 import { LoggedInGuard } from "app/shared/logged-in-guard";
 import { DashboardPageComponent } from './pages/dashboard-page.component';
 import { SurveyComponent } from './survey/survey.component';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+import * as Chart from 'chart.js';
+window['Chart'] = Chart;
 
 const routes: Routes = [
     { path: 'register', component: RegisterPageComponent },
     { path: 'all-in-one', component: AllInOnePageComponent },
     { path: 'reset-password', component: ResetPasswordComponent },
     { path: 'login', component: LoginPageComponent },
-    { path: 'dashboard', component: DashboardPageComponent, canActivate: [LoggedInGuard] },
+    /*{ path: 'dashboard', component: DashboardPageComponent, canActivate: [LoggedInGuard] },*/
     { path: '', component: HomePageComponent },
-    { path: 'Survey', component: SurveyComponent,/*canActivate: [LoggedInGuard]*/ }
+    { path: 'Survey', component: SurveyComponent,canActivate: [LoggedInGuard] }
 ];
 
 @NgModule({
@@ -49,6 +52,7 @@ const routes: Routes = [
     imports: [
         BrowserModule,
         FormsModule,
+        ChartsModule,
         ReactiveFormsModule,
         HttpModule,
         AlertModule.forRoot(),
