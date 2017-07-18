@@ -1,22 +1,19 @@
 .Qtext {
-    background-color: palegoldenrod;
-   
+    background-color:#D3D3D3;
     /*padding: 0 30px;*/
     font-weight: bold;
-    border-radius: 25px;
-    
+   /* border-radius: 25px;*/
     background-position: left top;
     background-repeat: repeat;
     padding: 20px; 
-    /*width: 200px;*/
-    /*height: 150px; */
+    width: 1200px;
+   
 }
 .QStat{
   background-color:paleturquoise;
   /*padding: 0 10px;*/
   font-weight: bold;
-  border-radius: 25px;
-    
+  border-radius: 25px;   
   background-position: left top;
   background-repeat: repeat;
 }
@@ -37,20 +34,32 @@
   background-repeat: repeat;
 }
 .pillartag{
-  background-color:paleturquoise;
-  padding: 1px 300px;
+  background-color:blue;
+  padding: 1px 20px;
   font-weight: bold;
-  border-radius: 25px;
-    
+  color: white;
+  /*border-radius: 25px;*/  
   background-position: left top;
   background-repeat: repeat;
+   width: 1200px;
+  
 }
 .chart {display: block; width: 60%;}
 .option{
-  background-color: #edf0f2;
+  background-color:#f0f0f5;
   padding: 0 20px;
   font-weight: bold;
-  border-radius: 25px;  
+  /*border-radius: 25px;*/  
+  background-position: left top;
+  background-repeat: repeat;
+  width: 1200px;
+  height: 70px;
+  outline-color: black;
+}
+.AssessmentP{
+  background-color:white;
+  padding: 1px 20px;
+  font-weight: bold;
   background-position: left top;
   background-repeat: repeat;
 }

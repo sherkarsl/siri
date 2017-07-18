@@ -2,27 +2,26 @@
     {{title}}
 </h1>
 
-<div class="row" *ngIf="isLoggedIn|async">
+<!--div class="row" *ngIf="isLoggedIn|async">
     <app-display-user></app-display-user>
-</div>
-<div class="row" *ngIf="!(isLoggedIn|async)">
+</div>-->
+<!--div class="row" *ngIf="!(isLoggedIn|async)">-->
+<div class="row">
    <div class="jumbotron">
      <div class="container text-center">
-      <h2>Smart Indusry Readiness Index (SIRI) Assessment</h2>      
-      <p>EDB SIRI framework helps to assess current context of advanced manufacturing princesses in organization and provides holistic improvement plan to embrace benefits of Industry 4.0 </p>
+      <h2>Smart Industry Readiness Index Assessment</h2>      
+      <p>Smart Industry Readiness Index is a methodology to systematically evaluate the current state of existing manufacturing facilities, to drive industry-level transformation. </p>
     </div>
    </div>
    <div class="container-fluid bg-3 text-center">    
    <div class="row">
     <div class="col-sm-12">
-      <div><h4>SIRI Framework</h4></div>
-      <p>SIRI is a methodology to systematically evaluate the current state of existing manufacturing facilities, to drive industry-level transformation.</p>
-
+      <!--div><h3><b>SIRI Framework</b></h3></div>-->
       <img [src]="image" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-12"> 
-      <div><h4> SIRI Assessment Report</h4></div>
-      <p>SIRI framwork measures a company‘s implementation level of Industry 4.0 (I4.0) concepts and provides insights for further improvement in productivity and innovation.</p>
+      <div><h4><b> Assessment Report</b></h4></div>
+      <p>Smart Industry Readiness Index measures a company‘s implementation level of Industry 4.0 (I4.0) concepts and provides insights for further improvement in productivity and innovation.</p>
       <img [src]="Report" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <!--div class="col-sm-4"> 

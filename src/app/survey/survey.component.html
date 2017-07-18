@@ -29,32 +29,36 @@
   <div *ngIf="mode=='quiz' && quiz">
     <div *ngFor="let question of filteredQuestions;">
       <div class="badge badge-info">Question {{pager.index + 1}} of {{pager.count}}.</div>
-      <div class ="cluster"><h6>
+      <!--div class ="cluster"><h6>
         {{pager.index + 1}}  {{ question.name}}</h6>
       </div>
       <div class ="pillar">
         <div><h6>{{ question.Driver}}</h6></div>
-        </div>
+        </div>-->
+   
         <div class ="pillartag">
-        <div><h5>{{ question.Tagline}}</h5></div>
-      </div>
+        <div align="center"><h5><b>{{ question.Tagline}}</b></h5></div>
+         </div>
       <div class="Qtext">
         <div><h5>{{ question.Des1}}</h5></div>
         <div><h5>{{ question.Des2}}</h5></div>
         <div><h5>{{ question.Des3}}</h5></div>
         <div><h5>{{ question.Des4}}</h5></div>
-      </div>
-      <div class ="QStat">
+      </div><br>
+      <!--div class ="QStat">
         <div>{{ question.Des5}}</div>
-      </div><br><br>
+      </div>-->
       <div class="row text-left options">
-        <div class="col-md-6" *ngFor="let option of question.options">
+        <div class="col-md-12" *ngFor="let option of question.options">
+          
           <div class="option">
-            <label class="" [attr.for]="option.id">
+            <label class="col-md-2" [attr.for]="option.id">
                 <input id="{{option.id}}" type="checkbox" [(ngModel)]="option.selected" (change)="onSelect(question, option);" />
-                {{option.name}}<div><h6>{{option.descp}}</h6></div>
-            </label>
-          </div>
+                {{option.name}} 
+            </label><h5 class="col-md-10">{{option.descp}}</h5> 
+            <!--div class="col-md-8"> </div>--> 
+          </div><br>
+          
         </div>
       </div>
     </div>
@@ -74,7 +78,9 @@
     </div>
   </div>
   <div class="result" *ngIf="mode=='result'">
-    <h2>Siri Result</h2>
+    <div id='dom-to-print'>
+    
+    <h2>Siri Response</h2>
     <div *ngFor="let question of quiz.questions; let index = index">
       <div class="result-question">
         <h4>{{index + 1}}. {{question.Tagline}}</h4>
@@ -86,19 +92,21 @@
         <!--div class="alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is {{isCorrect(question)}}.</div>-->
         <div class="alert {{ Optionselected(question) !== 'Not Answered'? 'alert-success': 'alert-danger'}}">Your answer is {{Optionselected (question)}}.</div>
       </div>
-
+      </div>
+      
     </div>
     <button class="btn btn-default" (click)="mode = 'Assess'">Show Assesment</button>
     <h4 class="alert alert-info text-sm-center">You may close this window now.</h4>                              
   </div>
-  <div *ngIf="mode=='Assess'">
-    <h5>here are results</h5>
+  <div class="Assessment" *ngIf="mode=='Assess'">
+  <div id='AssessmentP'class="AssessmentP" *ngIf="mode=='Assess'">
+    <!--h5>here are results</h5>-->
   <div>
   <table border="1" style="width:100%">
   <tr>
-    <th>Operation</th>
+    <th>Operations</th>
     <th>Supply Chain</th> 
-    <th>Prodct life cycle</th>
+    <th>Product Lifecycle</th>
     <th>Automation</th>
     <th>Connectivity</th>
     <th>Intelligence</th>
@@ -126,8 +134,10 @@
           (chartHover)="chartHovered($event)"
           (chartClick)="chartClicked($event)"></canvas>
 </div>
-  
 </div>
+<button class="btn btn-default" (click)="Printpdf();">ExportPDF</button>
+  </div>
+
   <hr />
   <div *ngIf="mode!='result'">
     <button class="btn btn-default" (click)="mode = 'quiz'">Quiz</button>

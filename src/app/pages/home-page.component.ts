@@ -25,7 +25,7 @@ export class HomePageComponent {
         this.userInfo
             .map(userInfo => !userInfo.isAnonymous)
             .subscribe(this.isLoggedIn);
-    const storageRef = firebaseApp.storage().ref().child('images/image.bmp');
+    const storageRef = firebaseApp.storage().ref().child('images/image.png');
     storageRef.getDownloadURL().then(url => this.image = url);
     const storageRef1 = firebaseApp.storage().ref().child('images/Report.PNG');
     storageRef1.getDownloadURL().then(url => this.Report = url);

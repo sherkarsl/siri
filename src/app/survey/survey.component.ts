@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Injectable, ElementRef, ViewChild }from '@angular/core';
 import { LoadsurveyService } from '../services/loadsurvey.service';
 import { HelpService } from '../services/help.service';
 import { Option, Question, Quiz, QuizConfig } from '../models/index';
@@ -6,7 +7,11 @@ import { AngularFireModule } from 'angularfire2';
 import {AngularFireDatabase, FirebaseListObservable,FirebaseObjectObservable} from 'angularfire2/database';
 import { Subject } from 'rxjs/Subject';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
-import 'chart.js/src/chart.js'
+import 'chart.js/src/chart.js';
+//declare let jsPDF;
+import * as jsPDF from "jspdf";
+//import * as html2canvas from 'html2canvas';
+//import * as d3 from 'd3';
 
 
 @Component({
@@ -17,6 +22,7 @@ import 'chart.js/src/chart.js'
 })
 export class SurveyComponent implements OnInit {
  // _url: string ="data/aspnet.json";
+ @ViewChild('to-pdf') element: ElementRef;
  quizes: any[];
   quiz: Quiz = new Quiz(null);
   selopt : Option = new Option(null);
@@ -30,7 +36,7 @@ export class SurveyComponent implements OnInit {
   answers = [];
   radarChartData:any = [];
   radarChartType:string = 'radar';
-  radarChartLabels:string[] = ['Operation', 'Supply Chain', 'Product lifecycle', 'Automation', 'Connectivity', 'Intelligence','Talent Readiness','Structure and Management'];
+  radarChartLabels:string[] = ['Operations', 'Supply Chain', 'Product Lifecycle', 'Automation', 'Connectivity', 'Intelligence','Talent Readiness','Structure and Management'];
   config: QuizConfig = {
     'allowBack': true,
     'allowReview': true,
@@ -168,5 +174,38 @@ export class SurveyComponent implements OnInit {
     //console.log(this.radarChartData);
   //this.assessmentscore.operation = this.answers[2].answered; 
   //console.log(this.answers[0].answered);
-}
+};
+Printpdf(){
+let doc = new jsPDF('p', 'pt', 'a4');
+
+// Add a title to your PDF
+doc.setFontSize(18); 
+doc.text(12, 10, "SIRI Assessment");
+doc.setFillColor(204, 204,204,0);
+//doc.rect(10, 10, 150, 160, "F");
+const elementToPrint = document.getElementById('AssessmentP'); //The html element to become a pdf
+//elementToPrint.setAttribute('width', '1000');
+//elementToPrint.setAttribute('height', '600');
+elementToPrint.setAttribute('fillStyle', '#FFFFFF');
+doc.addHTML(elementToPrint, () => {
+    doc.save('Report.pdf');
+});}
+
+
+ /*Printpdf () {
+    html2canvas(this.element.nativeElement, <Html2Canvas.Html2CanvasOptions>{
+      onrendered: function(canvas: HTMLCanvasElement) {
+        var pdf = new jsPDF('p','pt','a4');
+        var ctx = canvas.getContext('2d');
+        ctx.clearRect( 0 , 0 , 1000, 600 );
+        ctx.fillStyle="#FFFFFF";
+        ctx.fillRect(0 , 0 , 1000, 600);
+
+        pdf.addHTML(canvas, function() {
+          pdf.save('Report.pdf');
+        });
+      }
+    });
+ } */
+  
 }
