@@ -8,10 +8,9 @@ import {AngularFireDatabase, FirebaseListObservable,FirebaseObjectObservable} fr
 import { Subject } from 'rxjs/Subject';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import 'chart.js/src/chart.js';
-//declare let jsPDF;
 import * as jsPDF from "jspdf";
-//import * as html2canvas from 'html2canvas';
-//import * as d3 from 'd3';
+import { ProgressbarModule } from 'ngx-bootstrap';
+
 
 
 @Component({
@@ -34,9 +33,29 @@ export class SurveyComponent implements OnInit {
   db: AngularFireDatabase;
   ansdb: any[];
   answers = [];
+  barChartData: any =[];
+
+   options = {
+    scales: {
+        yAxes: [{
+            display: true,
+            ticks: {
+        
+                beginAtZero: true,   // minimum value will be 0.
+                steps: 6,
+                stepValue: 1,
+                max: 5 //max value for the chart is 60
+            }
+        }]
+    }
+};
+  barChartType:string = 'bar';
+  barChartLabels:string[] = ['Operations', 'Supply Chain', 'Product Lifecycle', 'Automation -Shop floor', 'Automation - Enterprise', 'Automation- Facility','Connectivity -Shop floor','Connectivity - Enterprise',
+  'Connectivity- Facility','Intelligence -Shop floor','Intelligence - Enterprise','Intelligence- Facility','Workforce Competency & Training',
+  'Inter-department Collaboration','Leadership Competency','Strategy & Governance'];
   radarChartData:any = [];
   radarChartType:string = 'radar';
-  radarChartLabels:string[] = ['Operations', 'Supply Chain', 'Product Lifecycle', 'Automation', 'Connectivity', 'Intelligence','Talent Readiness','Structure and Management'];
+  radarChartLabels:string[] = ['Operations', 'Supply Chain', 'Product Lifecycle', 'Technology(Shop Floor)', 'Technology(Enterprise)', 'Technology(Facility)','Talent Readiness','Structure and Management'];
   config: QuizConfig = {
     'allowBack': true,
     'allowReview': true,
@@ -52,6 +71,7 @@ export class SurveyComponent implements OnInit {
     'theme': 'none'
   };
   assessmentscore=[];
+  assessmentscore1=[];
   pager = {
     index: 0,
     size: 1,
@@ -131,8 +151,8 @@ export class SurveyComponent implements OnInit {
    // const flist = db.list('/flist');
    // this.seloptfire= question.options.find(x=>x.selected) ;
     this.quiz.questions.forEach(x => this.answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered':(x.options.find(x=>x.selected === true)).id }));
-    this.quiz.questions.forEach(x => this.siriassessment.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered':(x.options.find(x=>x.selected === true)).id }));
-    
+    //this.quiz.questions.forEach(x => this.siriassessment.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered':(x.options.find(x=>x.selected === true)).id }));
+    this.siriassessment.push(this.answers);
    console.log(this.answers[2].answered);
     // Post your data to the server here. answers contains the questionId and the users' answer.
    //console.log(answers);
@@ -144,20 +164,25 @@ export class SurveyComponent implements OnInit {
      //Product life
     this.assessmentscore.push(this.answers[2].answered);
       //automation
-    this.assessmentscore.push((this.answers[3].answered +this.answers[4].answered +this.answers[5].answered)/3);
+    this.assessmentscore.push((this.answers[3].answered +this.answers[6].answered +this.answers[9].answered)/3);
     //connectivity
-    this.assessmentscore.push((this.answers[6].answered +this.answers[7].answered +this.answers[8].answered)/3);
+    this.assessmentscore.push((this.answers[4].answered +this.answers[7].answered +this.answers[10].answered)/3);
     //intelligence
-    this.assessmentscore.push((this.answers[9].answered +this.answers[10].answered +this.answers[11].answered)/3 );
+    this.assessmentscore.push((this.answers[5].answered +this.answers[8].answered +this.answers[11].answered)/3 );
     //Talent
     this.assessmentscore.push((this.answers[12].answered +this.answers[13].answered) /2 );
     //Structure org
     this.assessmentscore.push((this.answers[14].answered +this.answers[15].answered) /2 );
-    console.log(this.assessmentscore);               
+    //console.log(this.assessmentscore);               
     //console.log(this.quiz.questions);
     this.radarChartData.push({'data': this.assessmentscore,label: 'Assessment Score'});
-    console.log(this.assessmentscore);
-    console.log(this.radarChartData);
+   // console.log(this.assessmentscore);
+    //console.log(this.radarChartData);
+
+   
+   this.answers.forEach( x=> this.assessmentscore1.push(x.answered));
+   this.barChartData.push({'data':this.assessmentscore1, label: 'Assessment Score'});
+    console.log(this.barChartData);
     this.mode = 'result';
   };
     // events
@@ -169,11 +194,7 @@ export class SurveyComponent implements OnInit {
     console.log(e);
   };
   onAssess(){
-    //this.radarChartData.push({'data': this.assessmentscore,label: 'Series A'});
-    //console.log(this.assessmentscore);
-    //console.log(this.radarChartData);
-  //this.assessmentscore.operation = this.answers[2].answered; 
-  //console.log(this.answers[0].answered);
+  //add
 };
 Printpdf(){
 let doc = new jsPDF('p', 'pt', 'a4');

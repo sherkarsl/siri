@@ -28,17 +28,11 @@
 
   <div *ngIf="mode=='quiz' && quiz">
     <div *ngFor="let question of filteredQuestions;">
-      <div class="badge badge-info">Question {{pager.index + 1}} of {{pager.count}}.</div>
-      <!--div class ="cluster"><h6>
-        {{pager.index + 1}}  {{ question.name}}</h6>
-      </div>
-      <div class ="pillar">
-        <div><h6>{{ question.Driver}}</h6></div>
-        </div>-->
-   
-        <div class ="pillartag">
+      <!--div class="badge badge-info">Question {{pager.index + 1}} of {{pager.count}}.</div>-->
+    <div><progressbar class="progress-striped active" max="16" value="{{pager.index + 1}}" type="success"><i>{{pager.index + 1}} /{{pager.count}} </i></progressbar></div>
+      <div class ="pillartag">
         <div align="center"><h5><b>{{ question.Tagline}}</b></h5></div>
-         </div>
+      </div>
       <div class="Qtext">
         <div><h5>{{ question.Des1}}</h5></div>
         <div><h5>{{ question.Des2}}</h5></div>
@@ -79,7 +73,6 @@
   </div>
   <div class="result" *ngIf="mode=='result'">
     <div id='dom-to-print'>
-    
     <h2>Siri Response</h2>
     <div *ngFor="let question of quiz.questions; let index = index">
       <div class="result-question">
@@ -107,9 +100,9 @@
     <th>Operations</th>
     <th>Supply Chain</th> 
     <th>Product Lifecycle</th>
-    <th>Automation</th>
-    <th>Connectivity</th>
-    <th>Intelligence</th>
+    <th>Technology(Shop floor)</th>
+    <th>Technology(Enterprise)</th>
+    <th>Technology(Facility)</th>
     <th>Talent Readiness</th>
     <th>Structure and Management</th>
   </tr>
@@ -127,16 +120,27 @@
     </table>
     </div>
       <div class="chart">
-  <canvas baseChart
+        <canvas baseChart
           [datasets]="radarChartData"
           [labels]="radarChartLabels"
           [chartType]="radarChartType"
+          [options]="options"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas><br>
+          </div>
+      <div class="chart2">      
+        <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [chartType]="barChartType"
+          [options]="options"
           (chartHover)="chartHovered($event)"
           (chartClick)="chartClicked($event)"></canvas>
+          
 </div>
 </div>
 <button class="btn btn-default" (click)="Printpdf();">ExportPDF</button>
-  </div>
+</div>
 
   <hr />
   <div *ngIf="mode!='result'">

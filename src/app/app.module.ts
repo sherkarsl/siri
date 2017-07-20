@@ -22,8 +22,10 @@ import { LoggedInGuard } from "app/shared/logged-in-guard";
 import { DashboardPageComponent } from './pages/dashboard-page.component';
 import { SurveyComponent } from './survey/survey.component';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { ProgressbarModule } from 'ngx-bootstrap';
 import * as Chart from 'chart.js';
 window['Chart'] = Chart;
+
 
 const routes: Routes = [
     { path: 'register', component: RegisterPageComponent },
@@ -56,6 +58,7 @@ const routes: Routes = [
         ReactiveFormsModule,
         HttpModule,
         AlertModule.forRoot(),
+        ProgressbarModule.forRoot(),
         AngularFireModule.initializeApp(firebaseConfig, "EDBSIRI"),
         AngularFireDatabaseModule,
         AngularFireAuthModule,

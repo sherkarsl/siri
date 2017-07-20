@@ -45,6 +45,7 @@
   
 }
 .chart {display: block; width: 60%;}
+.chart2 {display: block; width: 100%;}
 .option{
   background-color:#f0f0f5;
   padding: 0 20px;
@@ -63,4 +64,5 @@
   background-position: left top;
   background-repeat: repeat;
 }
+
 
